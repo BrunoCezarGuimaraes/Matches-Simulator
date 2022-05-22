@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Simulator</string>
-    <string name="txt_btnsimulate">Match simulation button.</string>
+    <string name="cd_btnsimulate">Match simulation button.</string>
+    <string name="cd_image_team_one">Team one image.</string>
+    <string name="cd_image_team_two">Team two image.</string>
+    <string name="txt_versus" translatable="false">X</string>
 </resources>
