@@ -1,4 +1,4 @@
-package me.start.simulator;
+package me.start.simulator.ui;
 
 import android.os.Bundle;
 
@@ -17,5 +17,21 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        setupMatchesList();
+        setupMatchesRefresh();
+        setupFloatingActionButton();
+    }
+
+    private void setupMatchesList() {
+        //TODO Listar as partidas consumindo a Api.
+    }
+
+    private void setupMatchesRefresh() {
+        //TODO: Atualizar as partidas na função de swipe.
+    }
+
+    private void setupFloatingActionButton() {
+        //TODO: Criar evento de click e simulação de partidas.
     }
 }
