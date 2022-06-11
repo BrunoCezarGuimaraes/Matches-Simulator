@@ -4,4 +4,5 @@
     <string name="cd_image_team_one">Team one image.</string>
     <string name="cd_image_team_two">Team two image.</string>
     <string name="txt_versus" translatable="false">X</string>
+    <string name="error_api">Unexpected error.</string>
 </resources>
