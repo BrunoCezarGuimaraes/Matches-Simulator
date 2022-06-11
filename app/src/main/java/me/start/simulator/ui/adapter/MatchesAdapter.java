@@ -1,10 +1,13 @@
 package me.start.simulator.ui.adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -30,10 +33,14 @@ public class MatchesAdapter extends RecyclerView.Adapter<MatchesAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Context context = holder.itemView.getContext();
         Match match = matches.get(position);
 
         //Adaptar os dados da partida (Pegas pela Api) para o Layout
+        Glide.with(context).load(match.getTeamOne().getImage()).circleCrop().into(holder.binding.ivTeamOne);
         holder.binding.tvTeamOneName.setText(match.getTeamOne().getName());
+
+        Glide.with(context).load(match.getTeamTwo().getImage()).circleCrop().into(holder.binding.ivTeamTwo);
         holder.binding.tvTeamTwoName.setText(match.getTeamTwo().getName());
 
     }
