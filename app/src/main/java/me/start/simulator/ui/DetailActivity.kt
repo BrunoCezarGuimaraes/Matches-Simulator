@@ -2,9 +2,16 @@ package me.start.simulator.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bumptech.glide.Glide
 import me.start.simulator.databinding.ActivityDetailBinding
+import me.start.simulator.domain.Match
 
 class DetailActivity : AppCompatActivity() {
+
+    object Extras {
+        const val MATCH = "EXTRA_MATCH"
+    }
+
     private lateinit var binding: ActivityDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,5 +22,14 @@ class DetailActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        loadMatchFromExtra()
+    }
+
+    private fun loadMatchFromExtra() {
+        intent?.extras?.getParcelable<Match>(Extras.MATCH)?.let {
+            Glide.with(this).load(it.place.image).into(binding.ivPlace)
+            supportActionBar?.title = it.place.name
+        }
     }
 }
