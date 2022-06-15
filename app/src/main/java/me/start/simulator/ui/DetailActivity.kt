@@ -30,6 +30,22 @@ class DetailActivity : AppCompatActivity() {
         intent?.extras?.getParcelable<Match>(Extras.MATCH)?.let {
             Glide.with(this).load(it.place.image).into(binding.ivPlace)
             supportActionBar?.title = it.place.name
+
+            binding.tvDescription.text = it.descripton
+
+            Glide.with(this).load(it.TeamOne.image).into(binding.ivTeamOne)
+            binding.tvTeamOneName.text = it.TeamOne.name
+            binding.rbTeamOneStar.rating = it.TeamOne.stars.toFloat()
+            if (it.TeamOne.score != null) {
+                binding.tvTeamOneScore.text = it.TeamOne.score.toString()
+            }
+
+            Glide.with(this).load(it.TeamTwo.image).into(binding.ivTeamTwo)
+            binding.tvTeamTwoName.text = it.TeamTwo.name
+            binding.rbTeamTwoStar.rating = it.TeamTwo.stars.toFloat()
+            if (it.TeamTwo.score != null) {
+                binding.tvTeamTwoScore.text = it.TeamTwo.score.toString()
+            }
         }
     }
 }
