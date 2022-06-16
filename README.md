@@ -12,3 +12,6 @@ Aplicativo de simulação de partidas entre dois times.
 
 # Nota
 Essa aplicação é feita através de pratica de diversos cursos da DIO sobre programação mobile.
+
+# Video
+https://user-images.githubusercontent.com/22208015/174131343-3095164b-a7fd-47c9-9379-e38daeca94d5.mp4
