@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46809438799",
+    "project_id": "simulator-lol",
+    "storage_bucket": "simulator-lol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46809438799:android:9e5d703e8594c59c8f683a",
+        "android_client_info": {
+          "package_name": "me.start.simulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46809438799-d59dsnbgdr88di1fidru0ranglb7ehlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvxK0VrP7skmDZIoDZQsbllhpQlcgXs0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46809438799-d59dsnbgdr88di1fidru0ranglb7ehlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
